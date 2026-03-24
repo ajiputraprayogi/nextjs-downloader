@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'standalone',
+  images: {
+    unoptimized: true, // We will use unoptimized since images hosted on external social media CDNs can be very dynamic
+  }
 };
 
 export default nextConfig;
