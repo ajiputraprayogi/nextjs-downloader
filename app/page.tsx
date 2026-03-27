@@ -11,7 +11,7 @@ export default function Home() {
       <DownloaderForm />
 
       <div className="absolute bottom-6 left-0 right-0 text-center text-zinc-500 dark:text-zinc-400 text-sm md:text-base font-medium">
-        Dibuat tahun {new Date().getFullYear()} oleh <span className="text-zinc-800 dark:text-zinc-200 font-bold">D.Prayogi</span>
+        Dibuat tahun {new Date().getFullYear()} oleh <span className="text-zinc-800 dark:text-zinc-200 font-bold">D. Prayogi</span>
       </div>
     </div>
   );

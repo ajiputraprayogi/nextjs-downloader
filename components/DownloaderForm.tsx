@@ -40,11 +40,11 @@ export default function DownloaderForm() {
               {activePlatform.icon}
             </div>
           </div>
-          <h1 className={`text-3xl sm:text-4xl font-extrabold tracking-tight mb-3 transition-colors duration-300 ${activePlatform.theme.text}`}>
+          <h2 className={`text-3xl sm:text-4xl font-extrabold tracking-tight mb-3 transition-colors duration-300 ${activePlatform.theme.text}`}>
             {activePlatform.name} Downloader
-          </h1>
+          </h2>
           <p className="text-zinc-500 dark:text-zinc-400 text-sm sm:text-base font-medium">
-            Unduh konten dari platform favorit Anda tanpa repot
+            Unduh konten dari platform favorit Anda tanpa repot di Sosmedify
           </p>
         </div>
 
