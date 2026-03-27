@@ -65,6 +65,7 @@ export const metadata: Metadata = {
 };
 
 import { ThemeProvider } from "@/components/ThemeProvider";
+import PWAInstallPrompt from "@/components/PWAInstallPrompt";
 
 export default function RootLayout({
   children,
@@ -88,11 +89,18 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
+          <PWAInstallPrompt />
         </ThemeProvider>
       </body>
     </html>
