@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Video Downloader | Unduh Video Bebas Watermark',
-    short_name: 'VD Downloader',
+    name: 'Sosmedify | Unduh Video Bebas Watermark',
+    short_name: 'Sosmedify',
     description: 'Platform unduh konten video dan foto favorit Anda dari TikTok, Instagram, X, Facebook dengan aman, gratis, dan cepat.',
     start_url: '/',
     display: 'standalone',
