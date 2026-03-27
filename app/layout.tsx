@@ -20,19 +20,48 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sosmedify | Video Downloader Bebas Watermark",
-  description: "Platform unduh konten video dan foto favorit Anda dari TikTok, Instagram, X, Facebook dengan aman, gratis, dan cepat. Dipersembahkan oleh Sosmedify.com",
-  keywords: ["sosmedify", "video downloader", "tiktok downloader", "instagram reel downloader", "twitter video downloader", "no watermark"],
+  metadataBase: new URL("https://sosmedify.com"),
+  title: "Sosmedify | Download Video TikTok, IG, FB Tanpa Watermark",
+  description: "Platform terpercaya untuk unduh konten video favorit Anda dari TikTok, Instagram Reels, X (Twitter), dan Facebook secara gratis, cepat, kualitas HD, tanpa watermark. Dipersembahkan oleh Sosmedify.com",
+  keywords: [
+    "sosmedify", 
+    "video downloader", 
+    "tiktok downloader", 
+    "instagram reel downloader", 
+    "twitter video downloader", 
+    "download video fb", 
+    "unduh video tanpa watermark", 
+    "download video tiktok",
+    "snaptik alternative"
+  ],
+  authors: [{ name: "Sosmedify Team", url: "https://sosmedify.com" }],
   icons: {
     icon: "/icon.svg",
   },
   openGraph: {
     title: "Sosmedify - Video Downloader Tanpa Watermark",
-    description: "Unduh video TikTok, Instagram, X/Twitter, dan Facebook tanpa repot di Sosmedify.com.",
+    description: "Unduh video TikTok, Instagram, X/Twitter, dan Facebook tanpa repot di Sosmedify.com. Akses gratis sepuasnya!",
     type: "website",
     url: "https://sosmedify.com",
     siteName: "Sosmedify",
-  }
+    locale: "id_ID"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sosmedify | Spesialis Download Video",
+    description: "Download video dari TikTok, IG, FB, dan X dengan kualitas tinggi secara gratis.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 import PWAInstallPrompt from "@/components/PWAInstallPrompt";
@@ -42,8 +71,29 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Sosmedify",
+    "url": "https://sosmedify.com",
+    "description": "Platform gratis terpercaya untuk download video TikTok tanpa watermark, Instagram Reels, foto, video Facebook, dan X.",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "IDR"
+    }
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
