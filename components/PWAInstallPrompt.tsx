@@ -86,7 +86,7 @@ export default function PWAInstallPrompt() {
             <img src="/icon-192x192.png" alt="App Icon" className="w-full h-full object-contain rounded-lg" />
           </div>
           <div className="flex-1 pt-1">
-            <h3 className="font-bold text-zinc-900 dark:text-white text-[15px] leading-tight mb-1">Pasang Aplikasi</h3>
+            <h3 className="font-bold text-zinc-900 dark:text-white text-[15px] leading-tight mb-1">Pasang Sosmedify</h3>
             <p className="text-[13px] text-zinc-500 dark:text-zinc-400 leading-snug">
               {isIOS 
                 ? "Ketuk ikon Share \u2191 di bawah lalu pilih 'Add to Home Screen' untuk memasang aplikasi." 

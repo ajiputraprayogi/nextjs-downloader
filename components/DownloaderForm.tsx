@@ -44,7 +44,7 @@ export default function DownloaderForm() {
             {activePlatform.name} Downloader
           </h1>
           <p className="text-zinc-500 dark:text-zinc-400 text-sm sm:text-base font-medium">
-            Unduh konten dari platform favorit Anda tanpa repot
+            Unduh konten dari platform favorit Anda tanpa repot di Sosmedify
           </p>
         </div>
 

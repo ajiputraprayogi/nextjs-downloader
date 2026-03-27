@@ -20,16 +20,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Video Downloader | Unduh Video Bebas Watermark",
-  description: "Platform unduh konten video dan foto favorit Anda dari TikTok, Instagram, X, Facebook dengan aman, gratis, dan cepat.",
-  keywords: ["video downloader", "tiktok downloader", "instagram reel downloader", "twitter video downloader", "no watermark"],
+  title: "Sosmedify | Video Downloader Bebas Watermark",
+  description: "Platform unduh konten video dan foto favorit Anda dari TikTok, Instagram, X, Facebook dengan aman, gratis, dan cepat. Dipersembahkan oleh Sosmedify.com",
+  keywords: ["sosmedify", "video downloader", "tiktok downloader", "instagram reel downloader", "twitter video downloader", "no watermark"],
   icons: {
     icon: "/icon.svg",
   },
   openGraph: {
-    title: "Video Downloader Tanpa Watermark",
-    description: "Unduh video TikTok, Instagram, X/Twitter, dan Facebook tanpa repot.",
+    title: "Sosmedify - Video Downloader Tanpa Watermark",
+    description: "Unduh video TikTok, Instagram, X/Twitter, dan Facebook tanpa repot di Sosmedify.com.",
     type: "website",
+    url: "https://sosmedify.com",
+    siteName: "Sosmedify",
   }
 };
 
